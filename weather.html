@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>听风天气</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="weather">
+    <div class="nav">
+      <div class="system-nav"></div>
+      <div class="weather-nav">
+
+        <div class="fl">
+          <span class="fl location-icon"></span>
+          <span class="fl location-city"></span>
+        </div>
+        <div class="fl search-box">
+          <input class="fl search-ipt" type="text" placeholder="输入城市，如：广州" autocomplete="off" />
+          <span class="fl search-icon"></span>
+        </div>
+
+      </div>
+    </div>
+
+
+      <div class="weather-box">
+
+        <div class="current-weather">
+          <div class="clearfix rq">
+            <span class="fl date"></span>
+            <span class="fr week"></span>
+          </div>
+          <div class="tem-box clearfix">
+            <span class="fl tem"></span>
+            <!-- <span class="fl qing wea"></span> -->
+          </div>
+          <div class="fl weather-status">
+            <div class="weather-status-text clearfix">
+                <span class="fl qing wea"></span>
+               
+            </div>
+              
+          </div>
+          <div class="clearfix fl air-quality">
+           <span class="">PM2.5值：</span><span class=" air air_pm25"></span><span class=" air air_level"></span>
+          </div>
+          <div class="clearfix fl  wind-direction">
+            <span class="win"></span><span class=" air win_speed"></span><span class=" air win_meter"></span>
+           </div>
+        </div>
+
+    
+
+      <div class="hours-box">
+        <div class="hours-box-title">24小时天气</div>
+        <div class="hours-weather">
+          <ul id="hoursWeather" class="clearfix">
+            
+          </ul>
+        </div>
+      </div>
+
+      <div class="future-weather">
+          <div class="future-weather-title hours-box-title">未来6天天气</div>
+          <div class="future-weather-box">
+            <ul id="futureWeather">
+              
+            </ul>
+          </div>
+      </div>
+    </div>
+
+
+  
+
+  </div>
+
+  <script src="./js/rem.js"></script>
+  <script src="./js/jquery-3.4.1.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
